@@ -1,0 +1,449 @@
+
+.container{
+
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-top: -500px;
+        padding-left: 50px;
+    }
+body{
+    margin: 0px;
+}
+    .navbar {
+        position: relative;
+        height: 600px;
+        display: flex;
+        filter: blur(0px); /* Blur effect */
+        
+    }
+
+    .navbar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('images/cover2.jpg') no-repeat center center/cover;
+        background-size:fill;
+         filter: blur(3px);
+        z-index: -1; /* Ensure the background stays behind the content */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+          /* opacity:0.7;   */
+         /* Optional: Make the background slightly transparent */
+    }
+    .welcome-message {
+        text-align: center;
+        color: rgb(27, 20, 2); /* Change to your preferred color */
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 500px;
+        margin-left: 200px;
+        font-family: "Lobster", sans-serif;
+      line-height: 2.5rem;
+    }
+    #message{
+        position: absolute; /* absolute positioning */
+        top: 30%; /* Position at 50% from the top */
+        left: 40%; /* Position at 50% from the left */
+        transform: translate(-50%, -50%); /* Center it by shifting back 50% of its width and height */
+        text-align: center; 
+        color:rgb(241, 185, 88)
+    
+    }
+    #span{
+        font-size: 18px; 
+        color: rgb(215, 203, 176); 
+        line-height: 0.7rem;
+        font-family: "Courgette", cursive;
+     }
+    #btn1{
+        background-color: #b7a385; 
+        border-radius: 50px;
+        color: rgb(242, 232, 232);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+    }
+    #btn1:hover{
+        color: rgb(67, 21, 2);
+        font-weight: 700;
+        font-family:cursive;
+    }
+    #btn{
+        background-color: #b7a385; /* Green */
+        border: 10px;
+        border-radius: 50px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+    }
+    #btn:hover{
+        color: rgb(105, 54, 32);
+        text-transform:none;
+        font-weight: 700;
+        font-family:cursive;
+    }
+
+.logo{
+    width: 170px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: -70px;
+
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    /* text horizontally */
+    margin: 10px 10px ;
+
+}
+.links{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:none;
+    color:white;
+    font-weight:700 ;
+    /* make th letters bold */
+    font-size: 20px;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.links:hover{
+    color: rgb(255, 158, 84);
+    text-decoration: underline;
+}
+#home{
+    background-color: #fff; /* Optional: Add a background color for the section */
+    padding: 50px 50px;
+    align-items: center; 
+    
+}
+.homeContent{
+        display: flex;
+        justify-content: space-between; /* Pushes content to the left and right */
+        align-items: center; /* Align items vertically in the center */
+        height: auto; /* Adjust based on content */
+      padding: 20px;/* Padding for the left and right of the container */
+}
+.content{
+    
+        flex: 1; /* Takes up one part of the container */
+        max-width: 60%; /* Limit the width to 50% */
+        line-height: 4rem;
+        align-items: center;
+
+    
+    
+}
+.content h1{
+    font-family: "Satisfy", cursive;
+    color: rgb(125, 107, 6);
+    font-size: 80px;
+    margin: 0;
+}
+#discover{
+    font-family: "Aleo", serif;
+font-size: 30px;
+
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 2rem;
+    align-items: center;
+}
+
+
+.gp{
+    margin: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 0; /* Takes up the remaining space */
+        align-items: center; /* Center the images */
+        max-width: 40%; /* Limit the width to 50% */
+
+}
+.gp img{
+    
+    width: 300px;
+    height: 350px;
+    object-fit:cover;
+    padding-top: 0; /* Remove or adjust padding between images */
+}
+/* images */
+#images{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.mainImage{
+    display: flex;
+    gap: 12px; /* Gap between the images */
+}
+.images{
+    position: relative;
+}
+.img2{
+    width: 500px;;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.middle {
+    position: relative;
+  }
+  
+  .middle .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight:600;
+    text-align: center;
+    font-family: "Updock", cursive;
+    color: rgba(45, 33, 10, 0.818);
+    background-color: rgba(255, 238, 0, 0); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.8rem;
+  }
+  #middle-text{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+/* about */
+#about{
+    margin: 0% 8% 8px 8%;
+
+    } 
+    .sectionHead{
+        text-align: center;
+    line-height: 1.5rem;
+     
+  
+    }
+    .sectionHead h1{
+    text-align: center;
+        font-family: "Satisfy", cursive;
+        color: rgb(125, 107, 6);
+        font-size: 80px;
+        line-height: 3.5rem;
+        margin: 10px;
+    }
+    #discover1{
+        align-items:center;
+        font-family: "Aleo", serif;
+        font-size: 30px;
+    }
+    .aboutBody{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        align-items: center;
+        
+    }
+    .img1{
+       width: 75%;
+       margin-right: 10%;
+       
+    }
+    .aboutContent{
+        font-size: 18px;
+        text-align: center;
+        font-family: sans-serif;
+    
+    }
+    .sectionHead p{
+    font-size: 16px;
+    color: #0e0404;
+    margin-bottom: 10px;
+    line-height: 2rem;
+    text-align: center;
+    }
+    .menu{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration:underline;
+        color: rgb(85, 69, 37);
+        font-weight:700 ;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    
+    }
+    .menu:hover{
+        text-decoration: underline;
+        color: grey;
+    }
+    /* big-image */
+     .bigimage {
+        width: 100%; /* Full width */
+        height: 400px; /* Set the desired height */
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        align-items: center; /* Center the image vertically */
+        overflow:auto; /* Make sure the image doesn't overflow */
+        /* filter: blur(4px); */
+    }
+   
+
+    /* Style for the image */
+    .bigimage img {
+        width: 100%; /* Make the image fully fit the div width */
+        height: 100%; /* Make the image fully fit the div height */
+        object-fit: cover; /* Ensure the image covers the entire div */
+    }
+    #text{
+        color: #ff9900;
+    
+    }
+/* contact section */
+    #contact{
+        margin: 0px;
+        background-color: #49230f;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+.sectionhead{
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Lexend", sans-serif;
+    color:bisque;
+}
+.mainhead{
+    font-size: 30px;
+}
+.subhead{
+    font-family: "Lexend", sans-serif;
+    font-size: 30px;
+    color: bisque;
+    font-weight: 800px;
+    
+}
+    .iconCollections{
+        /* horizontal view */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* distance frm top of heading */
+        margin-top: 2%;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        /* border: solid; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+        margin-bottom: 80px;
+    
+    }
+    .brands{
+        color: rgb(243, 238, 238);
+        font-size: 2rem;
+    }
+    .icon:hover{
+    background-image:linear-gradient(0deg, rgb(120, 85, 20) 0%, rgb(152, 148, 105) 100%);
+    }
+    .icon:hover .brands
+    {
+        color: rgb(255, 255, 255);
+        /* animation */
+        animation: rotate 3s;
+    
+    }
+    @keyframes rotate{
+        0%{
+            transform: rotate(40deg);
+        }
+        20%{
+            transform: rotate(-40deg);
+        }
+        40%{
+            transform: rotate(40deg);
+        }
+       60%{
+            transform: rotate(-40deg);
+        }
+        80%{
+            transform: rotate(40deg);
+        }
+        100%{
+            transform: rotate(-40deg);
+        }
+    }
+    footer{
+     background: #553220;
+       width: 100%;
+       height: 100px;
+     
+    }
+    #copyright{
+        padding-top: 30px;
+        text-align: center;
+        font-weight: 650;
+        margin: 0% ;
+        color: #fff;
+    }
+
+.footer-contact p {
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5%;
+  }
+  
+  .footer-contact a:hover {
+    color: #ff7a00;
+  }
+  
+    #star{
+        font-size: larger;
+        text-align: center;
+    }
+    @media(max-width:720px){
+        .navbar{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(176,159, 192);
+     
+    }
+    
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+    
+}
